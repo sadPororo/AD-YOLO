@@ -20,19 +20,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-You can 
+You can refer to "run.sh" file and look for the arguments in "./src/main.py" file
 
-```python
-import foobar
-
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```bash
+sh run.sh
 ```
 
 ## Contributing
