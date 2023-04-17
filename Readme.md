@@ -26,13 +26,8 @@ You can refer to "run.sh" file and look for the arguments in "./src/main.py" fil
 sh run.sh
 ```
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
 ## License
+This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+The file ```src/utils/seld_metrics.py``` was adapted from the [sharathadavanne/seld-dcase2022](https://github.com/sharathadavanne/seld-dcase2022), released under the MIT license. We modified some parts to fit the repository structure and added some classes & functions for exclusive evaluation under polyphony circumstances.
+
