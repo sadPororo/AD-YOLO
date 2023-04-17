@@ -28,8 +28,10 @@ sh run.sh
 
 ## Citation
 ```
-To be appear in ICASSP 2023
+To appear in ICASSP2023
 ```
+https://2023.ieeeicassp.org/
+
 
 ## License
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
