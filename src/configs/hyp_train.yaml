@@ -1,0 +1,26 @@
+nb_epochs: 200
+nb_iters: 500
+batch_size: 16
+num_workers: 16
+prefetch_factor: 4
+
+optim: 'Adam'
+lr: 0.001
+weight_decay: 0.0
+
+grid_size: [45, 45]
+nb_anchors: 5
+conf_thresh: 0.5
+clss_thresh: 0.5
+unify_thresh: 15.
+train_unify: [45., 25., 10.]
+max_train_unify: null
+min_train_unify: null
+f_lambda: null
+g_overlap: 0.5
+nms: 'conn-merge'
+loss_gains:
+    angular_gain: 5.
+    object_gain: 1.
+    nonobj_gain: 5.
+    class_gain: 3.

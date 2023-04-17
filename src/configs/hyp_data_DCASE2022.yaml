@@ -1,0 +1,17 @@
+data_pth: '../data/DCASE2022_SELD/'
+name_pth: '../data/DCASE2022_SELD/classes.txt'
+nb_classes: 13
+
+sr: 24000
+hop_length_s: 0.025
+win_length_s: 0.050
+hop_length: 600
+win_length: 1200
+n_fft: 1200
+mel_bins: 64
+window: 'han'
+
+label_hop_len_s: 0.1
+
+chunk_window_s: 20
+chunk_stride_s: 1

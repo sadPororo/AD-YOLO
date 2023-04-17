@@ -1,0 +1,6 @@
+rotation_augment: False
+
+spec_augment: False
+spec_augment_thresh: 0.5
+spec_augment_time_mask_param: 40
+spec_augment_freq_mask_param: 40
