@@ -33,7 +33,7 @@ To appear in ICASSP2023
 https://2023.ieeeicassp.org/
 
 
-## License
+## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) License
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
 The file ```src/utils/seld_metrics.py``` was adapted from the [sharathadavanne/seld-dcase2022](https://github.com/sharathadavanne/seld-dcase2022), released under the MIT license. We modified some parts to fit the repository structure and added some classes & functions for exclusive evaluation under polyphony circumstances.
