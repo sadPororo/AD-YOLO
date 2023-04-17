@@ -26,6 +26,11 @@ You can refer to "run.sh" file and look for the arguments in "./src/main.py" fil
 sh run.sh
 ```
 
+## Citation
+```
+To be appear in ICASSP 2023
+```
+
 ## License
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
