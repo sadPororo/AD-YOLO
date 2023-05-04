@@ -7,7 +7,7 @@ AD-YOLO tackles the SELD problem under an unknown polyphony environment.
 Taking the notion of angular distance, we adapt the approach of [You Only Look Once](https://doi.org/10.48550/arXiv.1506.02640) (YOLO) algorithm to SELD.
 Experimental results demonstrate the potential of AD-YOLO to outperform the existing formats and show the robustness of handling class-homogenous polyphony.
 
-# Environment
+## Environment
 
 Python==3.8.11
 
@@ -25,6 +25,11 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
+### Preprocess
+
+
+### Train/Evaluate
 
 You can refer to "run.sh" file and look for the arguments in "./src/main.py" file
 
