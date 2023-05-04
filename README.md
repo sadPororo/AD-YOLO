@@ -33,9 +33,15 @@ sh run.sh
 
 ## Citation
 ```
-To appear in ICASSP2023
+@article{kim2023adyolo,
+  title={AD-YOLO: You Only Look Once in Training Multiple Sound Event Localization and Detection},
+  author={Kim, Jin Sob and Park, Hyun Joon and Shin, Wooseok and Han, Sung Won},
+  journal={arXiv preprint arXiv.2303.15703},
+  year={2023}
+}
+
 ```
-https://2023.ieeeicassp.org/
+To appear in [ICASSP2023](https://2023.ieeeicassp.org/)
 
 
 ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) License
