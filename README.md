@@ -44,7 +44,7 @@ The datasets can be downloaded from here:
 
 
 
-For the detailed file hierarchies and structures, please see:
+For detailed information on file hierarchies and structures, please see:
 
 
 [AD-YOLO/data/DCASE2020_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2020_SELD)
@@ -52,6 +52,18 @@ For the detailed file hierarchies and structures, please see:
 ; [DCASE2022_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2022_SELD)
 
 ### Preprocess Train Data
+The Python command below will slice the audio/label of training data into uniform time chunks.
+You can give a specific annual dataset as an argument, such as "DCASE2020", "DCASE2021" and "DCASE2022".
+
+```bash
+python src/preprocess.py chunking --dataset all
+```
+
+This will compute and save the stats, mean and standard deviation, of acoustic feature from training data.
+
+```bash
+python src/preprocess.py scaler --dataset all
+```
 
 ### Train/Evaluate
 
