@@ -7,6 +7,12 @@ AD-YOLO tackles the SELD problem under an unknown polyphony environment.
 Taking the notion of angular distance, we adapt the approach of [You Only Look Once](https://doi.org/10.48550/arXiv.1506.02640) (YOLO) algorithm to SELD.
 Experimental results demonstrate the potential of AD-YOLO to outperform the existing formats and show the robustness of handling class-homogenous polyphony.
 
+
+Below figure depicts an example how AD-YOLO designates the responsible predictions for each ground truth targets at a single time frame.
+<p align="center">
+<img src="/img/ADYOLO_responsibles.png" width="550" height="550">
+</p>
+
 ## Environment
 
 Python==3.8.11
@@ -47,9 +53,9 @@ The datasets can be downloaded from here:
 For detailed information on file hierarchies and structures, please see:
 
 
-[AD-YOLO/data/DCASE2020_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2020_SELD)
-; [DCASE2021_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2021_SELD)
-; [DCASE2022_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2022_SELD)
+[AD-YOLO/data/DCASE2020_SELD](/data/DCASE2020_SELD)
+; [DCASE2021_SELD](/data/DCASE2021_SELD)
+; [DCASE2022_SELD](/data/DCASE2022_SELD)
 
 ### 2. Preprocess Train Data
 The first Python command below will slice the audio/label of training data into uniform time chunks.
@@ -58,8 +64,7 @@ You can give a specific annual dataset as an argument, such as "DCASE2020", "DCA
 
 If you give "scaler" as an action, this will compute and save the stats, mean and standard deviation, of acoustic feature from training data.
 
-Hyperparameters stated in data configurations (e.g. [hyp_data_DCASE2022.yaml](https://github.com/sadPororo/AD-YOLO/blob/main/src/configs/hyp_data_DCASE2022.yaml)) involves with this procedure.
-
+Hyperparameters stated in data configurations (e.g. [hyp_data_DCASE2022.yaml](/src/configs/hyp_data_DCASE2022.yaml)) involves with this procedure.
 
 ```bash
 python src/preprocess.py chunking --dataset all
@@ -74,12 +79,12 @@ cd ./src
 python main.py train --encoder se-resnet34 --loss adyolo -- dataset DCASE2021 --device cuda:0
 ```
 
-Or you would manage the experiment easier using [run.sh](https://github.com/sadPororo/AD-YOLO/blob/main/run.sh).
+Or you would manage the experiment easier using [run.sh](/run.sh).
 ```bash
 sh run.sh
 ```
 
-You can find more detailed description for command arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py) (see also [src/configs](https://github.com/sadPororo/AD-YOLO/tree/main/src/configs) for hyperparameters).
+You can find more detailed description for command arguments in [src/main.py](/src/main.py) (see also [src/configs](/src/configs) for hyperparameters).
 ```bash
 python main.py -h
 ```
