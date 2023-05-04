@@ -55,13 +55,12 @@ For detailed information on file hierarchies and structures, please see:
 The Python command below will slice the audio/label of training data into uniform time chunks.
 You can give a specific annual dataset as an argument, such as "DCASE2020", "DCASE2021" and "DCASE2022".
 
+
+If you give "scaler" as an action, this will compute and save the stats, mean and standard deviation, of acoustic feature from training data.
+
+
 ```bash
 python src/preprocess.py chunking --dataset all
-```
-
-This will compute and save the stats, mean and standard deviation, of acoustic feature from training data.
-
-```bash
 python src/preprocess.py scaler --dataset all
 ```
 
