@@ -13,18 +13,15 @@ Below figure depicts an example how AD-YOLO designates the responsible predictio
 <img src="/img/ADYOLO_responsibles.png" width="550" height="550">
 </p>
 
-## Environment
+## Environment & Python Requirements
 
-Python==3.8.11
+* Python==3.8.11
 
-CUDA >= 11.0
+* CUDA >= 11.0
 
-Soundfile==0.10.3.post1
+* Soundfile==0.10.3.post1
 
-
-## Requirements
-
-Use the "requirements.txt" file
+Use the [requirements.txt](/requirements.txt) to install Python dependencies.
 
 ```bash
 pip install -r requirements.txt
