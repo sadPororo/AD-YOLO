@@ -64,12 +64,22 @@ python src/preprocess.py chunking --dataset all
 python src/preprocess.py scaler --dataset all
 ```
 
-### 3. Train/Evaluate
+### 3. Train/Evaluate Model
 
-You can refer to [run.sh](https://github.com/sadPororo/AD-YOLO/blob/main/run.sh) file and look for the arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py) file
+If you want to initiate the pipeline directly, use as an example below:
+```bash
+cd ./src
+python main.py train --encoder se-resnet34 --loss adyolo -- dataset DCASE2021 --device cuda:0
+```
 
+Or you would manage the experiment easier using [run.sh](https://github.com/sadPororo/AD-YOLO/blob/main/run.sh) file.
 ```bash
 sh run.sh
+```
+
+You can find more detailed description for command arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py) file
+```bash
+python main.py -h
 ```
 
 ## Citation
