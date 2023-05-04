@@ -1,4 +1,10 @@
-This is a Pytorch implementation of [AD-YOLO: You Only Look Once in Training Multiple Sound Event Localization and Detection](https://doi.org/10.48550/arXiv.2303.15703), an overall framework used to train and evaluate models/formats on DCASE 2020~2022 Task3 (SELD) datasets.
+This is a Pytorch implementation of [AD-YOLO: You Only Look Once in Training Multiple Sound Event Localization and Detection](https://doi.org/10.48550/arXiv.2303.15703).
+We share an overall framework used to train and evaluate models/formats on DCASE 2020~2022 Task3 (SELD) datasets.
+
+
+AD-YOLO tackles the SELD problem under an unknown polyphony environment.
+Taking the notion of angular distance, we adapt the approach of [You Only Look Once](https://doi.org/10.48550/arXiv.1506.02640) (YOLO) algorithm to SELD.
+Experimental results demonstrate the potential of AD-YOLO to outperform the existing formats and show the robustness of handling class-homogenous polyphony.
 
 # Environment
 
