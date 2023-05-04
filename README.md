@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Prepare Datasets
+### 1. Prepare Datasets
 
 The datasets can be downloaded from here:
 
@@ -51,7 +51,7 @@ For detailed information on file hierarchies and structures, please see:
 ; [DCASE2021_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2021_SELD)
 ; [DCASE2022_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2022_SELD)
 
-### Preprocess Train Data
+### 2. Preprocess Train Data
 The Python command below will slice the audio/label of training data into uniform time chunks.
 You can give a specific annual dataset as an argument, such as "DCASE2020", "DCASE2021" and "DCASE2022".
 
@@ -64,7 +64,7 @@ python src/preprocess.py chunking --dataset all
 python src/preprocess.py scaler --dataset all
 ```
 
-### Train/Evaluate
+### 3. Train/Evaluate
 
 You can refer to "run.sh" file and look for the arguments in "./src/main.py" file
 
