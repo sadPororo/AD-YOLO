@@ -79,7 +79,7 @@ Or you would manage the experiment easier using [run.sh](https://github.com/sadP
 sh run.sh
 ```
 
-You can find more detailed description for command arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py) (see also [src/configs](https://github.com/sadPororo/AD-YOLO/tree/main/src/configs) for hyperparameters you can manage).
+You can find more detailed description for command arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py) (see also [src/configs](https://github.com/sadPororo/AD-YOLO/tree/main/src/configs) for hyperparameters).
 ```bash
 python main.py -h
 ```
