@@ -26,8 +26,18 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Preprocess
+### Prepare Datasets
 
+### Preprocess Train Data
+The datasets can be downloaded from here:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4064792.svg)](https://doi.org/10.5281/zenodo.4064792) TAU-NIGENS Spatial Sound Events 2020
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5476980.svg)](https://doi.org/10.5281/zenodo.5476980) TAU-NIGENS Spatial Sound Events 2021
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6406873.svg)](https://doi.org/10.5281/zenodo.6406873) [DCASE2022 Task 3] Synthetic SELD mixtures for baseline training
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6600531.svg)](https://doi.org/10.5281/zenodo.6600531) STARSS22: Sony-TAu Realistic Spatial Soundscapes 2022 dataset
+
+
+
+For the detailed file hierarchies and structures, please refer to:
 
 ### Train/Evaluate
 
