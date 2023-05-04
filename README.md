@@ -72,12 +72,12 @@ cd ./src
 python main.py train --encoder se-resnet34 --loss adyolo -- dataset DCASE2021 --device cuda:0
 ```
 
-Or you would manage the experiment easier using [run.sh](https://github.com/sadPororo/AD-YOLO/blob/main/run.sh) file.
+Or you would manage the experiment easier using [run.sh](https://github.com/sadPororo/AD-YOLO/blob/main/run.sh).
 ```bash
 sh run.sh
 ```
 
-You can find more detailed description for command arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py) file
+You can find more detailed description for command arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py).
 ```bash
 python main.py -h
 ```
