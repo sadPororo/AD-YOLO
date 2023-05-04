@@ -1,5 +1,4 @@
-This is an overall framework to train and evaluate models/formats on DCASE 2020~2022 Task3 (SELD) datasets.
-
+This is a Pytorch implementation of [AD-YOLO: You Only Look Once in Training Multiple Sound Event Localization and Detection](https://doi.org/10.48550/arXiv.2303.15703), an overall framework used to train and evaluate models/formats on DCASE 2020~2022 Task3 (SELD) datasets.
 
 # Environment
 
