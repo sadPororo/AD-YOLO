@@ -66,7 +66,7 @@ python src/preprocess.py scaler --dataset all
 
 ### 3. Train/Evaluate
 
-You can refer to "run.sh" file and look for the arguments in "./src/main.py" file
+You can refer to [run.sh](https://github.com/sadPororo/AD-YOLO/blob/main/run.sh) file and look for the arguments in [src/main.py](https://github.com/sadPororo/AD-YOLO/blob/main/src/main.py) file
 
 ```bash
 sh run.sh
