@@ -44,16 +44,12 @@ The datasets can be downloaded from here:
 
 
 
-For the detailed file hierarchies and structures, please refer to:
+For the detailed file hierarchies and structures, please see:
 
 
 [AD-YOLO/data/DCASE2020_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2020_SELD)
-
-
-[AD-YOLO/data/DCASE2021_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2021_SELD)
-
-
-[AD-YOLO/data/DCASE2022_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2022_SELD)
+; [DCASE2021_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2021_SELD)
+; [DCASE2022_SELD](https://github.com/sadPororo/AD-YOLO/tree/main/data/DCASE2022_SELD)
 
 ### Preprocess Train Data
 
