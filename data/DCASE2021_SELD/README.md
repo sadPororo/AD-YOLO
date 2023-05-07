@@ -1,7 +1,7 @@
 Paste "foa_dev" & "metadata_dev" folders here.
 
 ## Dataset 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5476980.svg)](https://doi.org/10.5281/zenodo.5476980) TAU-NIGENS Spatial Sound Events 2021
+* TAU-NIGENS Spatial Sound Events 2021 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5476980.svg)](https://doi.org/10.5281/zenodo.5476980)
 
 ## Folder structure   
 .   
