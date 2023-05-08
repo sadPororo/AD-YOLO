@@ -73,7 +73,7 @@ python src/preprocess.py scaler --dataset all
 If you want to initiate the pipeline directly, use as an example below:
 ```bash
 cd ./src
-python main.py train --encoder se-resnet34 --loss adyolo -- dataset DCASE2021 --device cuda:0
+python main.py train --encoder se-resnet34 --loss adyolo --dataset DCASE2021 --device cuda:0
 ```
 
 Or you would manage the experiment easier using [run.sh](/run.sh).
