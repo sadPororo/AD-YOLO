@@ -15,13 +15,11 @@ Below figure depicts an example how AD-YOLO designates the responsible predictio
 
 ## Environment & Python Requirements
 
-* Python==3.8.11
-
 * CUDA >= 11.0
+* Python==3.8.11
+* [Pytorch==1.10.0](https://pytorch.org/get-started/previous-versions/#v1100), with torchvision==0.11.0 & torchaudio==0.10.0
 
-* Soundfile==0.10.3.post1
-
-Use the [requirements.txt](/requirements.txt) to install Python dependencies.
+Use the [requirements.txt](/requirements.txt) to install the rest of Python dependencies.
 
 ```bash
 pip install -r requirements.txt
