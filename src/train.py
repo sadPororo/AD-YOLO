@@ -83,7 +83,7 @@ def train_model(args:dict, is_resume=False):
         device = torch.device(args['device']) if torch.cuda.is_available() else torch.device('cpu') # device can be differed from the previous training
         
         assert params['args']['exp_id'] == args['resume_pth']
-        if args['resume_pth'] != 'local':
+        if params['args']['logger']:
             logger = neptune_init(params, 
                                   resume_id=args['resume_pth'],
                                   neptune_project=params['args']['logging_meta']['neptune_project'],
