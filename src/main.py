@@ -14,6 +14,8 @@ from test  import test_model
 
 from pathlib import Path
 
+import warnings
+warnings.filterwarnings('ignore')
 
 def get_logging_meta_config():
 
