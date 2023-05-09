@@ -62,7 +62,7 @@ $ python src/preprocess.py chunking --dataset all
 $ python src/preprocess.py scaler --dataset all
 ```
 
-### 3-1. Initiate the Model Training Pipeline
+### 3-1. Initiate Model Training Pipeline
 
 If you want to initiate the pipeline directly, use as an example below:
 ```bash
@@ -79,7 +79,7 @@ The pipeline will first create the result folder to save the setups, predictions
 
 If you have an account at **[neptune.ai](https://neptune.ai/)**, you can give ```--logger``` argument on command to record the training procedure.
 
-   (Go [src/configs/logging_meta_config.yaml](/src/configs/logging_meta_config.yaml) and configure your ```neptune_project``` & ```neptune_api_token``` first.)
+  (Go [src/configs/logging_meta_config.yaml](/src/configs/logging_meta_config.yaml) and configure your ```neptune_project``` & ```neptune_api_token``` first.)
 
 * Giving ```--logger```, an experiment ID created at your **neptune.ai [project]** will become a name and ID of the output folder.
 
@@ -94,7 +94,7 @@ $ python main.py -h
 
 
 
-### 3-2. Resume the Interrupted Experiment
+### 3-2. Resume Interrupted Experiment
 
 This will restart(resume) the pipeline from the checkpoint with the name (ID) of the experiment folder.
 ```bash
@@ -104,7 +104,7 @@ $ python main.py train --resume_pth local-YYMMDD-HHmmss --device cuda:0
 
 
 
-### 3-3. Evalutate the Experimental Result
+### 3-3. Evalutate Experimental Result
 
 You can also use the name of the result folder to evaluate the best-validated model.
 ```bash
@@ -116,7 +116,7 @@ You can check the valid set score by giving ```val``` as an action.
 $ python main.py val --eval_pth local-YYMMDD-HHmmss --device cuda:0
 ```
 
-### 3-4. Make an Inference
+### 3-4. Make Inferences
 
 Give ```infer``` action and configure ```--eval_pth``` & ```--infer_pth``` argument to make an inference on ```.wav``` audio files.
 * ```--eval_pth``` is an ID/name for the experiment
