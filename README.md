@@ -22,7 +22,7 @@ Below figure depicts an example how AD-YOLO designates the responsible predictio
 Use the [requirements.txt](/requirements.txt) to install the rest of Python dependencies.
 
 ```bash
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ## Usage
