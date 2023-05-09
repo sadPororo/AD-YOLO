@@ -66,7 +66,7 @@ python src/preprocess.py chunking --dataset all
 python src/preprocess.py scaler --dataset all
 ```
 
-### 3. Train/Evaluate Model
+### 3-1. Initiate the Model Training Pipeline
 
 If you want to initiate the pipeline directly, use as an example below:
 ```bash
@@ -79,10 +79,23 @@ Or you would manage the experiment easier using [run.sh](/run.sh).
 sh run.sh
 ```
 
-You can find more detailed description for command arguments in [src/main.py](/src/main.py) (see also [src/configs](/src/configs) for hyperparameters).
+You can find more detailed description for command arguments in [src/main.py](/src/main.py) (see also [src/configs/](/src/configs) for hyperparameters).
 ```bash
 python main.py -h
 ```
+
+The pipeline will first create the folder to save the setups, result, model weights and checkpoint of the experiment. 
+
+You can check them from [src/results/](/src/results). 
+
+### 3-2. Resume the Interrupted Training
+
+You can restart the pipeline from the checkpoint with the name of the experiment folder.
+
+
+### 3-3. Evalutate the Experimental Result.
+
+You can also use the name of the result folder to evaluate the best-validated model.
 
 ## Citation
 ```
