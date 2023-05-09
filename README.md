@@ -14,10 +14,10 @@ Below figure depicts an example how AD-YOLO designates the responsible predictio
 </p>
 
 ## Environment & Python Requirements
-
-* CUDA >= 11.0
-* Python==3.8.11
-* [Pytorch==1.10.0](https://pytorch.org/get-started/previous-versions/#v1100), with torchvision==0.11.0 & torchaudio==0.10.0
+![Ubuntu](https://img.shields.io/badge/Ubuntu-18.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
+![Python](https://img.shields.io/badge/Python-3.8.11-3776AB?style=for-the-badge&logo=python&logoColor=FFEE73)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.10.0-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=EE4C2C)   
+* We recommend you to visit [Pytorch v1.10.0](https://pytorch.org/get-started/previous-versions/#v1100) for PyTorch installation including torchvision==0.11.0 and torchaudio==0.10.0.
 
 Use the [requirements.txt](/requirements.txt) to install the rest of Python dependencies.
 
