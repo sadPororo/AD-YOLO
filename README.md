@@ -34,21 +34,17 @@ The datasets can be downloaded from here:
 
 * TAU-NIGENS Spatial Sound Events 2020 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4064792.svg)](https://doi.org/10.5281/zenodo.4064792)
 
-
 * TAU-NIGENS Spatial Sound Events 2021 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5476980.svg)](https://doi.org/10.5281/zenodo.5476980)
-
 
 * [DCASE2022 Task 3] Synthetic SELD mixtures for baseline training [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6406873.svg)](https://doi.org/10.5281/zenodo.6406873)
 
-
 * STARSS22: Sony-TAu Realistic Spatial Soundscapes 2022 dataset [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6600531.svg)](https://doi.org/10.5281/zenodo.6600531)
-
 
 
 For detailed information on file hierarchies and structures, please see:
 
 
-[AD-YOLO/data/DCASE2020_SELD](/data/DCASE2020_SELD)
+  [AD-YOLO/data/DCASE2020_SELD](/data/DCASE2020_SELD)
 ; [DCASE2021_SELD](/data/DCASE2021_SELD)
 ; [DCASE2022_SELD](/data/DCASE2022_SELD)
 
@@ -62,40 +58,73 @@ If you give "scaler" as an action, this will compute and save the stats, mean an
 Hyperparameters stated in data configurations (e.g. [hyp_data_DCASE2022.yaml](/src/configs/hyp_data_DCASE2022.yaml)) involves with this procedure.
 
 ```bash
-python src/preprocess.py chunking --dataset all
-python src/preprocess.py scaler --dataset all
+$ python src/preprocess.py chunking --dataset all
+$ python src/preprocess.py scaler --dataset all
 ```
 
 ### 3-1. Initiate the Model Training Pipeline
 
 If you want to initiate the pipeline directly, use as an example below:
 ```bash
-cd ./src
-python main.py train --encoder se-resnet34 --loss adyolo --dataset DCASE2021 --device cuda:0
+$ cd src
+$ python main.py train --encoder se-resnet34 --loss adyolo --dataset DCASE2021 --device cuda:0
 ```
 
 Or you would manage the experiment easier using [run.sh](/run.sh).
 ```bash
-sh run.sh
+$ sh run.sh
 ```
+
+The pipeline will first create the result folder to save the setups, predictions, model weights and checkpoint of the experiment. You can check that from [src/results/](/src/results). 
+
+If you have an account at **[neptune.ai](https://neptune.ai/)**, you can give ```--logger``` argument on command to record the training procedure.
+
+   (Go [src/configs/logging_meta_config.yaml](/src/configs/logging_meta_config.yaml) and configure your ```neptune_project``` & ```neptune_api_token``` first.)
+
+* Giving ```--logger```, an experiment ID created at your **neptune.ai [project]** will become a name and ID of the output folder.
+
+* Or else, without ```--logger``` argument, the pipeline will automatically create the output folder and its ID as ```local-YYMMDD-HHmmss```
+
+
 
 You can find more detailed description for command arguments in [src/main.py](/src/main.py) (see also [src/configs/](/src/configs) for hyperparameters).
 ```bash
-python main.py -h
+$ python main.py -h
 ```
 
-The pipeline will first create the folder to save the setups, result, model weights and checkpoint of the experiment. 
-
-You can check them from [src/results/](/src/results). 
-
-### 3-2. Resume the Interrupted Training
-
-You can restart the pipeline from the checkpoint with the name of the experiment folder.
 
 
-### 3-3. Evalutate the Experimental Result.
+### 3-2. Resume the Interrupted Experiment
+
+This will restart(resume) the pipeline from the checkpoint with the name (ID) of the experiment folder.
+```bash
+$ cd src
+$ python main.py train --resume_pth local-YYMMDD-HHmmss --device cuda:0
+```
+
+
+
+### 3-3. Evalutate the Experimental Result
 
 You can also use the name of the result folder to evaluate the best-validated model.
+```bash
+$ cd src
+$ python main.py test --eval_pth local-YYMMDD-HHmmss --device cuda:0
+```
+You can check the valid set score by giving ```val``` as an action.
+```bash
+$ python main.py val --eval_pth local-YYMMDD-HHmmss --device cuda:0
+```
+
+### 3-4. Make an Inference
+
+Give ```infer``` action and configure ```--eval_pth``` & ```--infer_pth``` argument to make an inference on ```.wav``` audio files.
+* ```--eval_pth``` is an ID/name for the experiment
+* ```--infer_pth``` is a folder contains audio files that you want to make inferences.
+```bash
+$ cd src
+$ python main.py infer --eval_pth local-YYMMDD-HHmmss --infer_pth ~/folder-somewhere/audiofile-exists/ --device cuda:0
+```
 
 ## Citation
 ```
