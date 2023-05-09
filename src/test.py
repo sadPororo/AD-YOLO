@@ -148,4 +148,6 @@ def test_model(args:dict):
 
         print('total inference time: {:0.2f}, done...!'.format(test_time))
         
+    print('\nTEST DONE.')
+        
     
