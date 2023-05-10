@@ -17,7 +17,7 @@ Below figure depicts an example how AD-YOLO designates the responsible predictio
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-18.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
 ![Python](https://img.shields.io/badge/Python-3.8.11-3776AB?style=for-the-badge&logo=python&logoColor=FFEE73)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.10.0-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=EE4C2C)   
-* We recommend you to visit [Pytorch v1.10.0](https://pytorch.org/get-started/previous-versions/#v1100) for PyTorch installation including torchvision==0.11.0 and torchaudio==0.10.0.
+* We recommend you to visit [Previous Versions (v1.10.0)](https://pytorch.org/get-started/previous-versions/#v1100) for **PyTorch** installation including torchvision==0.11.0 and torchaudio==0.10.0.
 
 Use the [requirements.txt](/requirements.txt) to install the rest of Python dependencies.
 
@@ -83,7 +83,7 @@ If you have an account at **[neptune.ai](https://neptune.ai/)**, you can give ``
 
 * Giving ```--logger```, an experiment ID created at your **neptune.ai [project]** will become a name and ID of the output folder.
 
-* Or else, without ```--logger``` argument, the pipeline will automatically create the output folder and its ID as ```local-YYMMDD-HHmmss```
+* Or else, without ```--logger``` argument, the pipeline will automatically create the output folder and its ID as ```local-YYYYMMDD-HHmmss```
 
 
 
@@ -96,34 +96,35 @@ $ python main.py -h
 
 ### 3-2. Resume Interrupted Experiment
 
-This will restart(resume) the pipeline from the checkpoint with the name (ID) of the experiment folder.
+This will restart(resume) the pipeline from the checkpoint with the name (ID; e.g. ```local-YYYYMMDD-HHmmss```) of the experiment folder.
+* Give an experiment ID/name on ```--resume_pth```.
 ```bash
 $ cd src
-$ python main.py train --resume_pth local-YYMMDD-HHmmss --device cuda:0
+$ python main.py train --resume_pth local-YYYYMMDD-HHmmss --device cuda:0
 ```
 
 
 
 ### 3-3. Evalutate Experimental Result
 
-You can also use the name of the result folder to evaluate the best-validated model.
+You can also use the ID to evaluate the best-validated model.
+* An ID/name of the experiment is required to ```--eval_pth```
 ```bash
 $ cd src
-$ python main.py test --eval_pth local-YYMMDD-HHmmss --device cuda:0
+$ python main.py test --eval_pth local-YYYYMMDD-HHmmss --device cuda:0
 ```
 You can check the valid set score by giving ```val``` as an action.
 ```bash
-$ python main.py val --eval_pth local-YYMMDD-HHmmss --device cuda:0
+$ python main.py val --eval_pth local-YYYYMMDD-HHmmss --device cuda:0
 ```
 
 ### 3-4. Make Inferences
 
 Give ```infer``` action and configure ```--eval_pth``` & ```--infer_pth``` argument to make an inference on ```.wav``` audio files.
-* ```--eval_pth``` is an ID/name for the experiment
 * ```--infer_pth``` is a folder contains audio files that you want to make inferences.
 ```bash
 $ cd src
-$ python main.py infer --eval_pth local-YYMMDD-HHmmss --infer_pth ~/folder-somewhere/audiofile-exists/ --device cuda:0
+$ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-somewhere/audiofile-exists/ --device cuda:0
 ```
 
 ## Citation
