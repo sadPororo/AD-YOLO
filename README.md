@@ -53,7 +53,7 @@ The first Python command below will slice the audio/label of training data into 
 You can give a specific annual dataset as an argument, such as "DCASE2020", "DCASE2021" and "DCASE2022".
 
 
-If you give "scaler" as an action, this will compute and save the stats, mean and standard deviation, of acoustic feature from training data.
+If you give ```scaler``` as an action, this will compute and save the stats, mean and standard deviation, of acoustic feature from training data.
 
 Hyperparameters stated in data configurations (e.g. [hyp_data_DCASE2022.yaml](/src/configs/hyp_data_DCASE2022.yaml)) involves with this procedure.
 
