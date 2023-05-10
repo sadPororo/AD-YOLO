@@ -1,5 +1,5 @@
-# AD-YOLO: You Only Look Once in Training Multiple Sound Event Localization and Detection (ICASSP 2023)
-This is a Pytorch implementation of [AD-YOLO: You Only Look Once in Training Multiple Sound Event Localization and Detection](https://doi.org/10.48550/arXiv.2303.15703).
+# AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection (ICASSP 2023)
+This is a Pytorch implementation of [AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection](https://doi.org/10.48550/arXiv.2303.15703).
 We share an overall framework used to train and evaluate models/formats on DCASE 2020~2022 Task3 (SELD) datasets.
 
 
@@ -130,7 +130,7 @@ $ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-som
 ## Citation
 ```
 @article{kim2023adyolo,
-  title={AD-YOLO: You Only Look Once in Training Multiple Sound Event Localization and Detection},
+  title={AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection},
   author={Kim, Jin Sob and Park, Hyun Joon and Shin, Wooseok and Han, Sung Won},
   journal={arXiv preprint arXiv.2303.15703},
   year={2023}
