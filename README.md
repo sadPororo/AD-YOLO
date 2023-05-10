@@ -135,6 +135,7 @@ $ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-som
   year={2023}
 }
 ```
+```
 @inproceedings{kim2023ad,
   title={AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection},
   author={Kim, Jin Sob and Park, Hyun Joon and Shin, Wooseok and Han, Sung Won},
@@ -143,6 +144,7 @@ $ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-som
   year={2023},
   organization={IEEE}
 }
+```
 
 ## License [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
