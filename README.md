@@ -78,8 +78,7 @@ $ sh run.sh
 The pipeline will first create the result folder to save the setups, predictions, model weights and checkpoint of the experiment. You can check that from [src/results/](/src/results). 
 
 If you have an account at **[neptune.ai](https://neptune.ai/)**, you can give ```--logger``` argument on command to record the training procedure.
-
-  (Go [src/configs/logging_meta_config.yaml](/src/configs/logging_meta_config.yaml) and configure your ```neptune_project``` & ```neptune_api_token``` first.)
+(Go [src/configs/logging_meta_config.yaml](/src/configs/logging_meta_config.yaml) and configure your ```neptune_project``` & ```neptune_api_token``` first.)
 
 * Giving ```--logger```, an experiment ID created at your **neptune.ai [project]** will become a name and ID of the output folder.
 
