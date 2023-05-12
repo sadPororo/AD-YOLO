@@ -13,7 +13,7 @@ Below figure depicts an example how AD-YOLO designates the responsible predictio
 <img src="/img/ADYOLO_responsibles.png" width="550" height="550">
 </p>
 
-## Environment & Python Requirements
+## Environment Supports & Python Requirements
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-18.04+-E95420?style=for-the-badge&logo=ubuntu&logoColor=E95420)
 ![Python](https://img.shields.io/badge/Python-3.8.11-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![PyTorch](https://img.shields.io/badge/PyTorch-1.10.0-%23EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=%23EE4C2C)   
