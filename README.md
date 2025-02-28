@@ -135,7 +135,7 @@ $ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-som
 @article{kim2023ad,
   title={AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection},
   author={Kim, Jin Sob and Park, Hyun Joon and Shin, Wooseok and Han, Sung Won},
-  journal={arXiv preprint arXiv.2303.15703},
+  journal={arXiv preprint arXiv.2303.15703v3},
   year={2023}
 }
 ```
