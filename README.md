@@ -130,7 +130,7 @@ $ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-som
 ```
 
 ## Citation
-> J. S. Kim, et al., "AD-YOLO: You look only once in training multiple sound event localization and detection," in _Proc. ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)_, IEEE, 2023.
+> J. S. Kim, et al., "AD-YOLO: You look only once in training multiple sound event localization and detection," in _Proc. ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)_, IEEE, pp. 1-5, 2023.
 ```
 @article{kim2023ad,
   title={AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection},
@@ -145,6 +145,7 @@ $ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-som
   author={Kim, Jin Sob and Park, Hyun Joon and Shin, Wooseok and Han, Sung Won},
   booktitle={ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   year={2023},
+  pages={1--5},
   organization={IEEE}
 }
 ```
