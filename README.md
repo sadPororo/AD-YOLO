@@ -1,5 +1,5 @@
 # AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection</br>(ICASSP 2023)
-This is a Pytorch implementation of [AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection](https://doi.org/10.48550/arXiv.2303.15703).
+This is a PyTorch implementation of [AD-YOLO: You Look Only Once in Training Multiple Sound Event Localization and Detection](https://doi.org/10.48550/arXiv.2303.15703).
 We share an overall framework used to train and evaluate models/formats on DCASE 2020~2022 Task3 (SELD) datasets.
 
 
@@ -154,4 +154,5 @@ $ python main.py infer --eval_pth local-YYYYMMDD-HHmmss --infer_pth ~/folder-som
 This repository is released under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
 The file ```src/utils/seld_metrics.py``` was adapted from the [sharathadavanne/seld-dcase2022](https://github.com/sharathadavanne/seld-dcase2022), released under the MIT license. We modified some parts to fit the repository structure and added some classes & functions for exclusive evaluation under polyphony circumstances.
+
 
