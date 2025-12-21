@@ -4,9 +4,9 @@ librosa==0.8.1
 Wave==0.0.2
 SoundFile==0.10.3.post1
 mat73==0.58
-scikit-learn==1.0.2
 einops==0.4.1
-pandas==1.4.2
+scikit-learn
+pandas
 tqdm
 matplotlib
 PyYAML 
